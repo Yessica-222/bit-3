@@ -1,0 +1,12 @@
+<section class="articles">
+  <h2>📚 Artículos Tech</h2>
+  <div *ngIf="loading">Cargando artículos...</div>
+  <div *ngIf="error">{{ error }}</div>
+
+  <div class="card-list">
+    <div class="card" *ngFor="let article of articles">
+      <h3>{{ article.title }}</h3>
+      <a [routerLink]="['/articles', article.id]" class="btn">Ver más</a>
+    </div>
+  </div>
+</section>

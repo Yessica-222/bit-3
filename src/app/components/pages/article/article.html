@@ -1,0 +1,19 @@
+<section class="articles">
+  <h2>Artículos Tech</h2>
+
+  <div *ngIf="loading">Cargando artículos...</div>
+  <div *ngIf="error">{{ error }}</div>
+
+  
+
+  <div class="card-container">
+    <div class="card" *ngFor="let article of articles">
+      <img [src]="article.cover_image || 'https://via.placeholder.com/400x200'" alt="Imagen artículo" />
+      
+      <div class="card-content">
+        <h3>{{ article.title }}</h3>
+        <a [routerLink]="['/articles', article.id]" class="btn">Ver más</a>
+      </div>
+    </div>
+  </div>
+</section>

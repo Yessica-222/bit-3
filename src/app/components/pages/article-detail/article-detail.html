@@ -1,0 +1,23 @@
+<section *ngIf="!loading && article" class="article-detail">
+  <h1 class="title">{{ article.title }}</h1>
+
+  <img class="cover" [src]="article.cover_image || 'https://via.placeholder.com/600x300'" alt="Imagen del artículo" />
+
+  <div class="meta">
+    <p><strong>Autor:</strong> {{ article.user.name }}</p>
+    <p><strong>Publicado:</strong> {{ article.published_at | date }}</p>
+    <p><strong>Descripción:</strong> {{ article.description || 'Sin descripción disponible.' }}</p>
+
+    <p><strong>Etiquetas:</strong></p>
+    <div class="tags">
+      <span *ngFor="let tag of article.tag_list">#{{ tag }}</span>
+    </div>
+
+    <a [href]="article.url" target="_blank" rel="noopener noreferrer" class="btn">
+      Leer artículo completo
+    </a>
+  </div>
+</section>
+
+<div *ngIf="loading">Cargando artículo...</div>
+<div *ngIf="error">{{ error }}</div>
