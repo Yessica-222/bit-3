@@ -1,59 +1,19 @@
 # Bit3
+# Articulos Tech
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+## Descripción
+Bit-Cursos Tech es una aplicación web tipo SPA (Single Page Application) desarrollada con Angular 20. El objetivo principal es ofrecer a los usuarios una colección curada de **artículos tecnológicos gratuitos**, provenientes de la comunidad **DEV.to**, sobre temas como desarrollo web, APIs, herramientas para programadores, inteligencia artificial, y mucho más.
 
-## Development server
+El sitio cuenta con navegación entre rutas, filtrado por etiquetas, detalles individuales por artículo y un diseño responsive adaptable a todos los dispositivos.
 
-To start a local development server, run:
+## Características
 
-```bash
-ng serve
-```
+- SPA con Angular
+- 3 rutas principales: `/home`, `/article`, `**` (404)
+- Consumo de la API pública de DEV.to: [https://dev.to/api/articles](https://dev.to/api/articles)
+- Responsive: 575px, 576px, 768px, 992px
+- Componentes: `pages`, `shared`, `services`, `interfaces`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Autor
+**Yessica Alexandra Conejo Muñoz**  
+🔗 [https://github.com/Yessica-222](https://github.com/Yessica-222)
