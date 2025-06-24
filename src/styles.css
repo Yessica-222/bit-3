@@ -13,3 +13,61 @@ app-root {
 main {
   flex: 1;
 }
+
+
+/* -------------------------------------
+   RESPONSIVE DESIGN
+-------------------------------------- */
+
+/* Extra pequeños: Teléfonos ≤575px */
+@media (max-width: 575px) {
+  .card {
+    width: 90%;
+  }
+
+  .home-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-header p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Pequeños: Teléfonos ≥576px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .card {
+    width: 80%;
+  }
+
+  .home-header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Medianos: Tablets ≥768px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    width: 45%;
+  }
+
+  .home-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Grandes: Escritorios ≥992px */
+@media (min-width: 992px) {
+  .card {
+    width: 300px;
+  }
+
+  .home-header h1 {
+    font-size: 3rem;
+  }
+}
